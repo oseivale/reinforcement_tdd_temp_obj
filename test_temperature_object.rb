@@ -33,7 +33,7 @@ class TestTemperature < MiniTest::Test
   end
 
   def test_convert_fahrenheit_at_boiling
-    assert_equal 212, Temperature.new({:c => 100}).to_fahrenheit
+    assert 212, Temperature.new({:c => 100}).to_fahrenheit
   end
 
 end
